@@ -1,0 +1,35 @@
+<!-- указывает версию хтмл для нашего файла -->
+<!DOCTYPE html>
+<html lang="ru">
+    <head></head>
+    <body>
+       <table border="1">
+        <tbody>
+            <!-- tfooter  можно написать и перел тбоди, и в хтмл разметке так и будет но браузер все равно срендерит его там где надо то есть после tbody -->
+            <tfoot>
+                <tr>  
+                <td colspan="3">footer</td>
+                
+            </tr> 
+            </tfoot>
+            <tr>
+                <th>desc1</th>
+                <th>desc2</th>
+                <th>desc3</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <!-- colspan = 2 - говорим ячейке что она теперь занимает места на две ячейки -->
+                <td colspan="2">2</td>
+            </tr>
+           
+        </tbody>
+       </table>
+    </body>
+</html>
+
