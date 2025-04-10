@@ -1,35 +1,44 @@
-<!-- указывает версию хтмл для нашего файла -->
 <!DOCTYPE html>
 <html lang="ru">
     <head></head>
     <body>
-       <table border="1">
-        <tbody>
-            <!-- tfooter  можно написать и перел тбоди, и в хтмл разметке так и будет но браузер все равно срендерит его там где надо то есть после tbody -->
-            <tfoot>
-                <tr>  
-                <td colspan="3">footer</td>
-                
-            </tr> 
-            </tfoot>
-            <tr>
-                <th>desc1</th>
-                <th>desc2</th>
-                <th>desc3</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <!-- colspan = 2 - говорим ячейке что она теперь занимает места на две ячейки -->
-                <td colspan="2">2</td>
-            </tr>
-           
-        </tbody>
-       </table>
+        <table border="1">
+             <!-- thead тоже можно поставить не в том месте в таблице, барузер отрендерит как надо -->
+             <thead>
+                <tr>
+                    <th></th>
+                    <td colspan="2">
+                        <table border="1">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">Average</th>
+                                </tr>
+                                <tr>
+                                    <th>Height</th>
+                                    <th>Weight</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <th>Red eyes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- если указывать без tr, то браузер сам под все подряд идущие td сделает и обьединит их в tr -->
+                <tr>
+                    <th>Male</th>
+                    <td>1.9</td>
+                    <td>0.002</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <th>female</th>
+                    <td>1.7</td>
+                    <td>0.003</td>
+                    <td>43%</td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
 
